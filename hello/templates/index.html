@@ -2,10 +2,18 @@
 {% load staticfiles %}
 
 {% block content %}
-<p>X Y</p>
+<table>
+    <tr>
+        <td class="td">X</td>
+        <td class="td">Y</td>
+    <tr>
     {% for i in number_display %}
-        <p>{{ i }}</p>
+        <tr>
+            <td class="td">{{ i.0 }}</td>
+            <td class="td">{{ i.1 }}</td>
+        </tr>
     {% endfor %}
+</table>
 <br>
 <p>Mean of the entire set: {{ mean }}</p>
 <p>Standard deviation of the entire set: {{ SD }}</p>

@@ -14,7 +14,7 @@ def tara():
 
     number_display = []
     for index in range(len(X)):
-        number_display.append('{}\t{}'.format(X[index], Y[index]))
+        number_display.append({'0': X[index], '1': Y[index]})
 
     mean = 1.0 * sum(numbers) / len(numbers)
 
