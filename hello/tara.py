@@ -4,7 +4,6 @@ import random
 
 def tara():
     numbers = [random.randint(2, 20) for _ in range(random.randint(4, 8) * 2)]
-    numbers = [8, 9, 9, 6, 5, 6, 9, 12, 10, 13]
     X = []
     Y = []
     for (index, number) in enumerate(numbers):
