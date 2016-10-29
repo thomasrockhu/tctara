@@ -15,10 +15,19 @@
     {% endfor %}
 </table>
 <br>
-<p>Mean of the entire set: {{ mean }}</p>
-<p>Standard deviation of the entire set: {{ SD }}</p>
-<p>Pearson correlation for X and Y: {{ rxy }}</p>
-<p>Spearman-Brown coefficient: {{ rxx }}</p>
-<p>Standard Error of Measurement: {{ sem }}<p>
-
+<div>
+    <p>Mean of the entire set:</p>
+    <p>Standard deviation of the entire set:</p>
+    <p>Pearson correlation for X and Y:</p>
+    <p>Spearman-Brown coefficient:</p>
+    <p>Standard Error of Measurement:<p>
+</div>
+<button onclick="$('.answers').toggle()">Show/Hide solutions</button>
+<div class="answers">
+    <p>Mean of the entire set: {{ mean }}</p>
+    <p>Standard deviation of the entire set: {{ SD }}</p>
+    <p>Pearson correlation for X and Y: {{ rxy }}</p>
+    <p>Spearman-Brown coefficient: {{ rxx }}</p>
+    <p>Standard Error of Measurement: {{ sem }}<p>
+</div>
 {% endblock %}
