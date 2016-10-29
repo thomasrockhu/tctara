@@ -18,7 +18,7 @@ def tara():
 
     mean = 1.0 * sum(numbers) / len(numbers)
 
-    SD = sum([(i - mean) * (i - mean) for i in numbers]) / len(numbers)
+    SD = math.sqrt(sum([(i - mean) * (i - mean) for i in numbers]) / len(numbers - 1))
 
     n = len(numbers) / 2
     sumxx = sum([X[i] * X[i] for i in range(len(X))])
