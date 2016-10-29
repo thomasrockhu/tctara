@@ -2,11 +2,14 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from .models import Greeting
+from hello.tara import tara
 
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
-    return render(request, 'index.html')
+
+    context = tara()
+    return render(request, 'index.html', context=context)
 
 
 def db(request):
