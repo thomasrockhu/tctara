@@ -4,6 +4,7 @@ import random
 
 def tara():
     numbers = [random.randint(2, 20) for _ in range(random.randint(4, 8) * 2)]
+    numbers = [8, 9, 9, 6, 5, 6, 9, 12, 10, 13]
     X = []
     Y = []
     for (index, number) in enumerate(numbers):
@@ -18,7 +19,7 @@ def tara():
 
     mean = 1.0 * sum(numbers) / len(numbers)
 
-    SD = math.sqrt(sum([(i - mean) * (i - mean) for i in numbers]) / len(numbers - 1))
+    SD = math.sqrt(sum([(i - mean) * (i - mean) for i in numbers]) / (len(numbers) - 1))
 
     n = len(numbers) / 2
     sumxx = sum([X[i] * X[i] for i in range(len(X))])
