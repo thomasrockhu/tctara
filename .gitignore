@@ -1,5 +1,5 @@
 venv
-*.sw[op]
+*.sw[nop]
 *.pyc
 staticfiles
 .env

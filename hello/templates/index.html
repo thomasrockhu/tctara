@@ -2,10 +2,15 @@
 {% load staticfiles %}
 
 {% block content %}
-<span>X     Y</span>
-    {% for i in range(len(X)) %}
-        <span>{{ X[i] }}     {{ Y[i] }}</span>
+<p>X Y</p>
+    {% for i in number_display %}
+        <p>{{ i }}</p>
     {% endfor %}
+<br>
+<p>Mean of the entire set: {{ mean }}</p>
+<p>Standard deviation of the entire set: {{ SD }}</p>
+<p>Pearson correlation for X and Y: {{ rxy }}</p>
+<p>Spearman-Brown coefficient: {{ rxx }}</p>
+<p>Standard Error of Measurement: {{ sem }}<p>
 
-    <span>{{ '{}\t{}'.format(X[index], Y[index])}}
 {% endblock %}
