@@ -3,7 +3,8 @@ import random
 
 
 def tara():
-    numbers = [random.randint(2, 20) for _ in range(random.randint(4, 8) * 2)]
+    numbers = [random.randint(2, 15) for _ in range(random.randint(4, 8) * 2)]
+    # numbers = [8, 13, 17, 13, 13, 7, 4, 8, 13, 11, 14, 3, 5, 16]
     X = []
     Y = []
     for (index, number) in enumerate(numbers):
@@ -29,6 +30,7 @@ def tara():
     rxx = (2 * rxy) / (1 + rxy)
 
     sem = SD * (math.sqrt(1 - rxx))
+    import ipdb; ipdb.set_trace()
     return {
         'SD': '{:.4f}'.format(SD),
         'mean': '{:.4f}'.format(mean),
